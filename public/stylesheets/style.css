@@ -1,0 +1,162 @@
+body, html {
+    
+    
+    height:100%; 
+    overflow:hidden;
+    background-color: rgb(245, 240, 219);
+    margin:0;
+}
+
+.topbar {
+    width:100vw;
+    height: 8vh;
+    background-color: rgb(245, 235, 223);
+    box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.112);
+
+}
+
+
+
+.platform {
+    position: absolute;
+    width: 100%;
+    
+    height: 29%;
+    bottom: -23%;
+    
+
+    background-image: url("../images/platform.png");
+    background-size: 100%;
+    z-index: 8;
+    background-repeat: no-repeat;
+}
+
+.PillarParent {
+    display: grid;
+    position: absolute;
+    grid-template-columns: auto auto auto auto;
+    
+   
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+
+   
+    z-index: 1;
+    width: 30vw;
+    height: 50%;
+
+    top: 24%;
+    left:4%;
+    
+} 
+
+.LeaderParent {
+
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    
+
+    background-color: rgb(150, 72, 72);
+    width: 60vw;
+    height: 60vh;
+    top: 25vh;
+    left: 36vw;
+
+} 
+
+.First {
+    background-color: rgb(255, 255, 255);
+    width: 60vw;
+    height: 10%;
+}
+
+
+.Main {
+    position: relative;
+    width: 100%;  
+    height: 50vh;
+    z-index: 3;
+    
+    
+    background-color: rgba(255, 0, 0, 0);
+}
+
+
+
+
+.Top {
+    
+    width: 100%;
+    height: 40%;
+    background-color: rgba(227, 7, 7, 0);
+
+    margin: auto;
+    position: relative;
+    
+   
+    
+    align-items: center;
+    align-content: center;
+
+    background-image: url("../images/top.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    bottom: 30%;
+
+    
+
+}
+
+.Pillar {
+    overflow:hidden;
+    width: 15vh;
+    height: 40vh;
+    top:10vh;
+    
+    align-items: center;
+    position: relative;
+    justify-items: center;
+    
+    background-image: url("../images/pelare.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 55%, 70%;
+    
+}
+   
+
+.Pillar:hover {
+    
+    height: 60vh;
+    background-size: 55% 900px;
+    top: -10vh;
+    transition: 1s;
+    
+
+}
+
+
+.Bottom {
+    
+    width: 156%;
+    height: 14%;
+    background-color: #cccccc00;
+
+    margin: auto;
+    position: relative;
+    
+    left: -29%;
+    bottom: -91%;
+    
+    align-items: center;
+    align-content: center;
+
+    background-image: url("../images/bottom.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60%;
+}   
