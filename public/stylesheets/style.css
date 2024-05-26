@@ -57,29 +57,40 @@ body, html {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, 1fr);
     grid-column-gap: 0px;
+
+    text-align: center;
+    vertical-align: middle;
+    
     
     width: 50vw;
     height: 70vh;
     top: 20vh;
     left: 36vw;
-
 } 
 
+.Vertical {
+    display: flex;
+    position: absolute;
+    left:50%;
+    
+    font-family: Arial, Helvetica, sans-serif;
+    transform: translateY(-50%);
+    font-size: 4vw;
+    vertical-align: middle;
+    
+    
+}
 
 .LeaderElement {
     background-color: rgb(240, 232, 203);
     width: 100%;
     height: 90%;
-
-    
+ 
     border-radius: 10px;
     border-top: 0;
     border-bottom: 0;
     border-color: rgba(224, 215, 181, 0.466);
     border-style: solid;
-    
-    
-    
 }
 .header {
     height: 100%;
@@ -94,11 +105,12 @@ body, html {
     background-color: rgb(223, 214, 178);
 
     text-align: center;
+    vertical-align: middle;
     
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(193, 182, 140);;
     
-    font-size: 5em;
+    font-size: 14vh;
     
 }
 
@@ -120,14 +132,16 @@ body, html {
 .Top {
     
     width: 100%;
-    height: 40%;
+    height: 80%;
     background-color: rgba(227, 7, 7, 0);
 
     margin: auto;
     position: relative;
     
-   
+    font-size: 4vw;
+    text-align: center;
     
+
     align-items: center;
     align-content: center;
 
@@ -141,9 +155,15 @@ body, html {
 
 }
 
+.TopValue {
+    position: inherit;
+    top:-20%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .Pillar {
     overflow:hidden;
-    width: 15vh;
+    width: 100%;
     height: 40vh;
     top:10vh;
     
@@ -154,16 +174,17 @@ body, html {
     background-image: url("../images/pelare.png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 55%, 70%;
+    background-size: 55% 70%;
     
 }
    
 
 .Pillar:hover {
     
-    height: 60vh;
-    background-size: 55% 900px;
-    top: -10vh;
+    height: 67vh;
+    background-size: 55% 60%;
+    background-position: 50% 70%;
+    top: -14vh;
     transition: 1s;
     
 
@@ -173,14 +194,14 @@ body, html {
 .Bottom {
     
     width: 156%;
-    height: 14%;
+    height: 15%;
     background-color: #cccccc00;
 
     margin: auto;
     position: relative;
     
     left: -29%;
-    bottom: -91%;
+    bottom: -82%;
     
     align-items: center;
     align-content: center;
